@@ -223,6 +223,9 @@ L01 Workspace/.metadata/
 L01 Workspace/.metadata
 L01 Workspace/.metadata/*
 
+.metadata/*
+**/.metadata/*
+**/.metadata
 .settings/*
 .project
 **/.settings/*
