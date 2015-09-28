@@ -5,7 +5,7 @@
 *.pydevproject
 .project
 .metadata
-.metadata/
+/L01 Workspace/.metadata/*
 bin/
 tmp/
 *.tmp
