@@ -1,5 +1,6 @@
 # Ignorar los siguientes archivos (solo los posteriores a la configuración de es# ta caracteristica)
 .metadata
+#Servers
 
 # Subir a pesar de las restricciones
 !SampleWorkspace_1.4/.metadata/
