@@ -1,4 +1,4 @@
-//Hay que hacerlo al principio, al menos una vez
+//Hay que hacerlo al principio, al menos una vez:
 git config --global user.email 'utri1990@gmail.com'
 git config --global user.name 'Utrillator'
 
