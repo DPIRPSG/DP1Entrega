@@ -5,7 +5,6 @@
 *.pydevproject
 .project
 .metadata
-/L01 Workspace/.metadata/*
 bin/
 tmp/
 *.tmp
@@ -215,3 +214,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+L01 Workspace/.metadata/.log
+L01 Workspace/.metadata/.plugins/org.eclipse.ui.workbench/workbench.xml
+L01 Workspace/.metadata/*
