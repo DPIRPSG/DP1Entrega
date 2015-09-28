@@ -1,0 +1,70 @@
+//Hay que hacerlo al principio, al menos una vez
+git config --global user.email 'utri1990@gmail.com'
+git config --global user.name 'Utrillator'
+
+git pull <--- Desde el repositorio remoto actualiza todo lo que tenga en el mio desde la rama en la que este
+git push <--- Actualiza el repositorio remoto a partir del nuestro desde la rama en la que me encuentre
+git add [Carpeta/Archivo/Conjunto de ficheros/...] <--- Señala los archivos que vamos a subir
+git status <--- Muestra todos los cambios realizados en el repositorio local, incluido el estado del fichero
+git add -A <--- Cambia el estado de todos los ficheros modificados a Staged. Estos se preparan para el proximo commit.
+git commit -s -m 'commit inicial Utrilla' <--- Hace una nueva versión en el repositorio local
+
+git checkout -b Utrilla <--- Para movernos de una rama a otra. Con parametro -b crea esa rama y te mueve a esa rama.
+git checkout master <--- Para movernos a la rama master. Sin parametro -b no la crea.
+git merge [nombreRama] <--- Vuelca los cambios realizados de [nombreRama] en la rama en la que nos encontremos. 
+          --no-commit  <--- 
+git diff Utrilla master <--- muestra las diferencias entre dos ramas (en concreto dos commit)
+
+Operaciones habituales
+----------------------
+
+     -> Alguien ha realizado cambios en el proyecto y quiero actualizarlo en mi repositorio local.
+
+        /---------------------------------------------------------------------------------------------\
+        | SUPONIENDO QUE ESTAMOS TRABAJANDO DESDE NUESTRA RAMA DE TRABAJO [Guillermo, Pablo, Utrilla] |
+        \---------------------------------------------------------------------------------------------/
+
+          - git checkout master <--- Nos movemos a la rama master 
+
+          - git pull <--- Cargamos todo el repositorio remoto en la rama en la que me encuentre (en este caso master)
+
+          - git checkout [nombreRama] <--- Nos cambiamos a la rama en la que trabajaremos [Guillermo, Pablo, Utrilla]
+
+          - git merge master <--- Vuelca las actualizaciones de la rama [master] en la rama en la que me encuentro 
+
+                                  [Guillermo, Pablo, Utrilla]
+
+     -> He realizado cambios en el proyecto y quiero actualizarlo en el repositorio remoto.
+
+        /---------------------------------------------------------------------------------------------\
+        | SUPONIENDO QUE ESTAMOS TRABAJANDO DESDE NUESTRA RAMA DE TRABAJO [Guillermo, Pablo, Utrilla] |
+        \---------------------------------------------------------------------------------------------/
+ 
+
+          - git add [Carpeta/Archivo/Conjunto de ficheros/...] <--- Cambia el estado de los ficheros seleccionados
+
+                   a Staged 
+
+          - git commit -s -m '[mensaje]'<--- Hace un commit (Como una foto de todo el repo.) con todo lo que haya en Staged 
+  
+          - git checkout master <--- Nos movemos a la rama master
+
+          - git pull <--- Cargamos todo el repositorio remoto en la rama en la que me encuentre (en este caso master)
+
+          - git merge [nombreRama] <--- Vuelca los cambios realizados de [nombreRama] en la rama en la que nos encontremos
+
+          - git push <--- Actualiza el repositorio remoto a partir del nuestro desde la rama en la que me encuentre
+
+          - git diff master [nombreRama] <--- Para ver si ambas ramas tienen alguna diferencia [Guillermo, Pablo, Utrilla]
+
+          NO OLVIDAR: VOLVER A LA RAMA DE TRABAJO:
+
+          - git checkout [nombreRama] <--- Nos cambiamos a la rama en la que trabajaremos [Guillermo, Pablo, Utrilla]
+
+          
+
+            Nota: Si nos hemos equivocado al ejecutar el comando git add. El siguiente enlace muestra todos los cambios
+
+            realizados: http://git-scm.com/book/es/v1/Fundamentos-de-Git-Deshaciendo-cosas
+
+           - 
