@@ -216,4 +216,4 @@ pip-log.txt
 .mr.developer.cfg
 L01 Workspace/.metadata/.log
 L01 Workspace/.metadata/.plugins/org.eclipse.ui.workbench/workbench.xml
-L01 Workspace/.metadata/*
+L01 Workspace/.metadata/
