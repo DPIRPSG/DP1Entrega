@@ -1,0 +1,18 @@
+Item 1:
+
+Para la realización del Item 1 nos ha sido necesario utilizar y configurar la máquina virtual proporcionada por el profesorado de la asignatura.
+
+	(Captura de pantalla de VirtualBox con la máquina corriendo)
+
+Los únicos cambios realizados por los integrantes del grupo han sido:
+- Modificar la apariencia visual de la máquina virtual para mejorar el rendimiento.
+
+	(Captura del escritorio de la VM)
+
+- Establecer las Carpetas Compartidas desde VirtualBox para poder disponer de nuestros proyectos desde los sistemas operativos originales de cada integrante del grupo.
+
+	(Capturas de la carpeta vista desde el SO virtualizado y el original)
+
+Para continuar con la configuración tenemos que resetear el workspace en el que vamos a trabajar. El workspace será el proporcionado junto al material de la entrega y sólo le cambiamos el nombre como nos pide la guía de clase. Sin embargo, para continuar debemos realizar los siguientes pasos:
+- Reconfigurar el JRE
+- Eliminar el servidor Tomcat para instanciarlo de nuevo y eliminar las dependencias de la máquina.
