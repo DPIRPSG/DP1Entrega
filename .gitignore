@@ -222,3 +222,8 @@ L01\ Workspace/.metadata/*
 L01 Workspace/.metadata/
 L01 Workspace/.metadata
 L01 Workspace/.metadata/*
+
+.settings/*
+.project
+**/.settings/*
+**/.project
