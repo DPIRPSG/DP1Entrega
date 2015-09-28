@@ -2,7 +2,7 @@
 .metadata
 
 # Subir a pesar de las restricciones
-!SampleWorkspace_1.4/.metadata
+!SampleWorkspace_1.4/.metadata/
 
 #### Por Defecto
 
@@ -12,7 +12,7 @@
 
 *.pydevproject
 .project
-.metadata
+#.metadata
 bin/
 tmp/
 *.tmp
