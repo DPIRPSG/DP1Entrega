@@ -21,9 +21,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/welcome")
 public class WelcomeController extends AbstractController {
-
-	//TODO Comprobar cambio de idioma
-	private static final String nombres = "Guillermo Alcala Gamero, Manuel Francisco Lopez Ruiz, Carlos Alberto Mata Gil y Miguel Rodriguez Caballero";
 	
 	// Constructors -----------------------------------------------------------
 	
@@ -34,16 +31,24 @@ public class WelcomeController extends AbstractController {
 	// Index ------------------------------------------------------------------		
 
 	@RequestMapping(value = "/index")
-	public ModelAndView index(@RequestParam(required=false, defaultValue= nombres) String name) {
+	public ModelAndView index(@RequestParam(required=false, defaultValue= "John Doe") String name) {
 		ModelAndView result;
 		SimpleDateFormat formatter;
 		String moment;
 		
+		String name1 = "Guillermo Alcala Gamero";
+		String name2 = "Manuel Francisco Lopez Ruiz";
+		String name3 = "Carlos Alberto Mata Gil";
+		String name4 = "Miguel Rodriguez Caballero";
 		formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		moment = formatter.format(new Date());
 				
 		result = new ModelAndView("welcome/index");
-		result.addObject("name", name);
+		result.addObject("name1", name1);
+		result.addObject("name2", name2);
+		result.addObject("name3", name3);
+		result.addObject("name4", name4);
+		
 		result.addObject("moment", moment);
 
 		return result;
