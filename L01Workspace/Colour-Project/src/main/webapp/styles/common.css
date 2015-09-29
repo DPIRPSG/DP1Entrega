@@ -7,6 +7,16 @@
  * http://www.tdg-seville.info/License.html
  * 
  */
+ 
+ body {
+ 	background-color: FloralWhite;
+ 	font-family: Courier New;
+ }
+ 
+ h1 {
+ 	color: BlueViolet;
+ 	background-color: Gold;
+ }
 
 .error {
 	color: red;

@@ -18,7 +18,7 @@
 
 .jMenu li {
 	display: table-cell;
-	background-color: #322f32;
+	background-color: IndianRed;
 	margin: 0px;
 }
 
@@ -44,14 +44,14 @@
 }
 
 .jMenu li ul li {
-	background-color: #322f32;
+	background-color: IndianRed;
 	display: block;
 	border-bottom: 1px solid #484548;
 	padding: 0;
 }
 
 .jMenu li ul li.arrow {
-	background-color: #322f32;
+	background-color: IndianRed;
 	background-image: url('../images/arrow_down.png');
 	background-repeat: no-repeat;
 	background-position: center center;
