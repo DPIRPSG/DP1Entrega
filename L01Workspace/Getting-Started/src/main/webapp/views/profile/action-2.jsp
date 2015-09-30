@@ -17,3 +17,4 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net"%>
 
 <p><spring:message code="profile.action.2" /></p>
+<p>${escalera}</p>

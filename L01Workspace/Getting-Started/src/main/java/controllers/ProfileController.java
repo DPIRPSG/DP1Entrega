@@ -12,6 +12,7 @@ package controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -31,11 +32,23 @@ public class ProfileController extends AbstractController {
 	
 	// Action-2 ---------------------------------------------------------------		
 	
-	@RequestMapping("/action-2")
-	public ModelAndView action2() {
+	@RequestMapping("/action-2.do")
+	public ModelAndView action2(
+			@RequestParam(value = "count", required = false) Integer count) {
 		ModelAndView result;
 				
 		result = new ModelAndView("profile/action-2");
+		
+		String res = "";
+		
+		if (count != null) {
+			for (int i = 0; i < count; i++) {
+				res = res + i + ", ";
+			}
+
+			res = res + count;
+		}
+		result.addObject("escalera", res);
 		
 		return result;
 	}
