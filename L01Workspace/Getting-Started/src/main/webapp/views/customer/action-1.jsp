@@ -17,3 +17,16 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net"%>
 
 <p><spring:message code="customer.action.1" /></p>
+<ul>
+	<li>${valor0}</li>
+	<li>${valor1}</li>
+	<li>${valor2}</li>
+	<li>${valor3}</li>
+	<li>${valor4}</li>
+	<li>${valor5}</li>
+	<li>${valor6}</li>
+	<li>${valor7}</li>
+	<li>${valor8}</li>
+	<li>${valor9}</li>
+	<li>${valor10}</li>
+</ul>

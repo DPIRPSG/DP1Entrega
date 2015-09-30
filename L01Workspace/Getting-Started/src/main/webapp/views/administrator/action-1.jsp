@@ -17,3 +17,4 @@
 <%@taglib prefix="display" uri="http://displaytag.sf.net"%>
 
 <p><spring:message code="administrator.action.1" /></p>
+<p>${numero1} ${suma} ${numero2} ${igual} ${resultado}</p>
