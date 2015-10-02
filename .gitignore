@@ -1,10 +1,19 @@
 # Ignorar los siguientes archivos (solo los posteriores a la configuración de es# ta caracteristica)
 .metadata
 Servers
+Scrapbook
+
+# Evitar subir cosas de Dolphin (Linux-KDE)
+.directory 
 
 # Subir a pesar de las restricciones
+!Documentation/SampleWorkspace_1.4/.metadata/
+!Documentation/SampleWorkspace_1.4/Servers
+!Documentation/SampleWorkspace_1.4/Scrapbook
+
 !SampleWorkspace_1.4/.metadata/
 !SampleWorkspace_1.4/Servers
+!SampleWorkspace_1.4/Scrapbook
 
 #### Por Defecto
 
@@ -221,3 +230,4 @@ pip-log.txt
 
 #Translations
 *.mo
+*.directory
