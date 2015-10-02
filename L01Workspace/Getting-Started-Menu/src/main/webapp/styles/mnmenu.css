@@ -115,3 +115,7 @@ ul.bluemenu li.level-0 li span.arrow.hover {
     width:auto;
     border:none;
 }
+a.level-2, a.level-1 {
+	text-decoration: none;
+	color: #fff;
+}
