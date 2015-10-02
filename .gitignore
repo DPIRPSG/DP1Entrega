@@ -1,10 +1,12 @@
 # Ignorar los siguientes archivos (solo los posteriores a la configuración de es# ta caracteristica)
 .metadata
 Servers
+Scrapbook
 
 # Subir a pesar de las restricciones
 !SampleWorkspace_1.4/.metadata/
 !SampleWorkspace_1.4/Servers
+!SampleWorkspace_1.4/Scrapbook
 
 #### Por Defecto
 
@@ -221,3 +223,4 @@ pip-log.txt
 
 #Translations
 *.mo
+*.directory
