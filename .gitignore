@@ -3,7 +3,14 @@
 Servers
 Scrapbook
 
+# Evitar subir cosas de Dolphin (Linux-KDE)
+.directory 
+
 # Subir a pesar de las restricciones
+!Documentation/SampleWorkspace_1.4/.metadata/
+!Documentation/SampleWorkspace_1.4/Servers
+!Documentation/SampleWorkspace_1.4/Scrapbook
+
 !SampleWorkspace_1.4/.metadata/
 !SampleWorkspace_1.4/Servers
 !SampleWorkspace_1.4/Scrapbook
