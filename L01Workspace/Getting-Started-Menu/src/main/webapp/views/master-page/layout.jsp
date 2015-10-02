@@ -44,7 +44,7 @@
 <title><tiles:insertAttribute name="title" ignore="true" /></title>
 
 <script>$(document).ready(function() {
-$('#idmenu').mnmenu();
+$('#bluemenu').mnmenu();
 })</script>
 
 </head>
