@@ -39,11 +39,11 @@
 
 \begin{document}
 \section{Implementación de un menú distinto a Jmenu}
-Decidimos reemplazar el menú dado en la asignatura (Jmenu) por mnMenu (\href{https://github.com/manusa/mnmenu}{GitHub}) debido a la simplicidad, la similitud con el menú original, el ejemplo \href{http://www.marcnuri.com/en/content/mnmenu-dropdown-jquery-menu}{online} y a la documentación y ejemplos descargables desde \href{https://github.com/manusa/mnmenu}{GitHub}.
+Decidimos reemplazar el menú dado en la asignatura (Jmenu) por mnMenu (\href{https://github.com/manusa/mnmenu}{GitHub}) debido a la simplicidad, similitud con Jmenu, el ejemplo funcional \href{http://www.marcnuri.com/en/content/mnmenu-dropdown-jquery-menu}{online} y la documentación y ejemplos descargables desde \href{https://github.com/manusa/mnmenu}{GitHub}.
 \\
 \\
 Su implementación consistió en la inclusión del archivo \href{https://github.com/manusa/mnmenu/blob/master/src/jquery.mnmenu.js}{jquery.mnmenu.js} en la carpeta de nuestro proyecto denominada \href{https://github.com/DPIRPSG/DP1Entrega/tree/master/L01Workspace/Getting-Started-Menu/src/main/webapp/scripts}{/src/main/webapp/scripts}. Posteriormente fue necesario cambiar la llamada que realiza \href{https://github.com/DPIRPSG/DP1Entrega/blob/master/L01Workspace/Getting-Started-Menu/src/main/webapp/views/master-page/layout.jsp}{layout.jsp} (localizado en \href{https://github.com/DPIRPSG/DP1Entrega/blob/master/L01Workspace/Getting-Started-Menu/src/main/webapp/views/master-page/}{webapp/views/master-page}) por la dirección del archivo añadido anteriormente (\href{https://github.com/DPIRPSG/DP1Entrega/tree/master/L01Workspace/Getting-Started-Menu/src/main/webapp/scripts/jquery.mnmenu.js}{jquery.mnmenu.js}).
-En ese mismo archivo modificamos el estilo css que solitica jmenu por uno de los que ofrecía mnMenu denominado \href{https://github.com/DPIRPSG/DP1Entrega/blob/Item5-6/L01Workspace/Getting-Started-Menu/src/main/webapp/styles/mnmenu.css}{mnmenu.css} y el script que ejecuta para cargar anteriormente por este:
+En ese mismo archivo modificamos el estilo css que solitica jmenu por uno de los que ofrecía mnMenu denominado \href{https://github.com/DPIRPSG/DP1Entrega/blob/Item5-6/L01Workspace/Getting-Started-Menu/src/main/webapp/styles/mnmenu.css}{mnmenu.css} y el script que anteriormente llamaba a la ejecución de Jmenu por este:
 \begin{lstlisting}[frame=single]
 <script>
 	$(document).ready(function() {
@@ -51,7 +51,7 @@ En ese mismo archivo modificamos el estilo css que solitica jmenu por uno de los
 	})
 </script>
 \end{lstlisting}
-Se puede apreciar que al menú se le llama como \textit{bluemenu} y no con \textit{mnmenu}. Esto se debe a que usamos ese estilo visual para el menú por lo que es la manera más simple de ejecutarlo.
+Se puede apreciar que al menú se le denomina \textit{bluemenu} y no \textit{mnmenu}. Esto se debe a que es el id necesario para usar ese estilo visual siendo esta solución más sencilla que cambiar todas las llamadas que hacen referencia a él en el css.
 \\
 \\
 Tras esto, debemos acceder al archivo \href{https://github.com/DPIRPSG/DP1Entrega/blob/master/L01Workspace/Getting-Started-Menu/src/main/webapp/views/master-page/header.jsp}{headert.jsp} y modificar los ids y las clases correspondientes a cada sección del menú con el fin de que coincidan con las del estilo css para conservar el estilo original. Ejemplo:
@@ -68,5 +68,5 @@ Tras esto, debemos acceder al archivo \href{https://github.com/DPIRPSG/DP1Entreg
 
 
 
-A Pesar de esto, tuvimos que realizar algunas pequeñas modificaciones para facilitar el estilo visual.
+A Pesar de esto, tuvimos que realizar algunas pequeñas modificaciones para mejorar el estilo visual.
 \end{document}
