@@ -49,7 +49,7 @@ public class AdministratorController extends AbstractController {
 		result.addObject("resultado", x+y);
 		
 		} else {
-			result.addObject("resultado", "Por favor, pase los valores de X e Y a traves de la URL");
+			result.addObject("resultado", "3.0 + 2.0 = 5.0");
 		}
 		
 		return result;
