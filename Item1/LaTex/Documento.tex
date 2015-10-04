@@ -1,0 +1,195 @@
+% !TeX spellcheck = es_ES
+\documentclass{scrartcl}
+%\documentclass{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{listings}%codigo de programación
+\usepackage{lscape}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage[hidelinks,colorlinks=true, linkcolor=black]{hyperref} %hyperref para hacer los links del indice y usar \url{URL} y \href{URL}{text}y hidelinks para que no se rodeen con una caja de color los enlaces. Más información en: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+
+
+
+
+\pagestyle{fancy}
+%\usepackage{tabulary}
+%\usepackage{/home/manolito/IISSI/pruebaLaTex/comfortaa/tex/latex/comfortaa/comfortaa}
+
+\lfoot[\thepage]{\bfseries{Autumn Group 2 - DP}}
+\cfoot[\thepage]{Item 1}
+\rfoot[\thepage]{\thepage}
+%\lfoot[c1]{GECH}
+%\lfoot[e1]{GECH}
+\lhead[\thepage]{}
+\rhead[\thepage]{}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.2pt}
+\hyphenation{se-ma-nal per-so-na-les ope-ra-tivo mo-ni-tor mues-tra pide correc-ta-men-te}
+
+
+
+%\renewcommand{\baselinestretch}{1.5} %interlineado
+
+\begin{document}
+%\begin{figure}[H]
+%	\centering
+%	\makebox[\textwidth]{\includegraphics[width=0.98\textwidth]{/home/manolito/datos/IISSI/Portada/V2.png}}
+%	%\caption{BPMN1}
+%	\label{fig:Portada}
+%\end{figure}
+%\thispagestyle{empty}
+%\pretolerance=2000
+%\tolerance=3000
+
+
+
+%\tableofcontents % indice de contenidos
+
+%\newpage
+\section{Introducción}
+Este informe explica como ha sido configurado el entorno de trabajo en todos los ordenadores de este grupo cumpliendo el \textbf{Item 1} y siguiendo la materia explicada en clase. Dicho entorno ha sido configurado en la máquina virtual facilitada por los profesores de la materia.
+\section{Configución Máquina Virtual}
+La primera acción realizada ha sido la descarga de la máquina  (Figura \ref{fig:ConfVM01}) desde el servidor \href{ftp://practica:practica@postgrado.lsi.us.es/DT/}{ftp://practica:practica@postgrado.lsi.us.es/DT/} , concretamente la máquina \textit{Developer's confguration.zip}  situada en la carpeta  \textit{Configurations}.
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM01.png}}
+	\caption{Descarga Máquina Virtual}
+	\label{fig:ConfVM01}
+	
+\end{figure}
+
+Una vez descargada, ha sido desplazada a la carpeta donde VirtualBox almacena las máquinas virtuales y ha sido agregada a VirtualBox. (Figura \ref{fig:ConfVM02}).
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM02.png}}
+	\caption{Agregar Máquina Virtual}
+	\label{fig:ConfVM02}
+	
+\end{figure}
+
+Posteriormente se ha procedido a configurar las carpetas compartidas entre la máquina virtual (guest) y nuestro ordenador (host). (Figura \ref{fig:ConfVM03}). El resultado final en la máquina virtual (guest) se puede apreciar en la figura \ref{fig:ConfVM06}.
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM03.png}}
+	\caption{Carpeta Compartida Máquina Virtual}
+	\label{fig:ConfVM03}
+	
+\end{figure}
+
+Por último, debido a la escasa potencia de algunos equipos de nuestro grupo hemos decidido eliminar los efectos visuales de la máquina virtual (guest). Para ello se ha accedido a \textit{Inicio}, clic derecho en \textit{My Computer} y seleccionar \textit{Properties} (Figura \ref{fig:ConfVM04}). En la nueva ventana \textit{Advanced}, \textit{Performance-Setting} y elegimos la configuración para el mejor rendimiento (\textit{Adjust for best performance}).(Figura \ref{fig:ConfVM05})
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM04.png}}
+	\caption{Desactivación Efectos Visuales Máquina Virtual (I)}
+	\label{fig:ConfVM04}
+	
+\end{figure}
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM05.png}}
+	\caption{Desactivación Efectos Visuales Máquina Virtual (II)}
+	\label{fig:ConfVM05}
+	
+\end{figure}
+
+El resultado final sería el mostrado en la figura \ref{fig:ConfVM06}.
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfVM06.png}}
+	\caption{Desactivación Efectos Visuales Máquina Virtual (III)}
+	\label{fig:ConfVM06}
+	
+\end{figure}
+
+\section{Configuración Eclipse}
+Para configurar el \textit{Workspace} primero lo hemos copiado desde el fichero facilitado en \href{https://ev.us.es}{enseñanza virtual} localizado en la carpeta \textit{L01 - Introduction}, \textit{S02 - The Working enviroment}, \textit{Materials} y \textit{Sample Workspace 1.4.zip} a la carpeta donde deseemos guardar el entorno de trabajo. Posteriormente la seleccionamos como carpeta de trabajo en eclipse cuando lo ejecutemos (Figura \ref{fig:ConfEcl01}).
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl01.png}}
+	\caption{Seleccionar Ubicación del Workspace}
+	\label{fig:ConfEcl01}
+	
+\end{figure}
+
+Una vez cargado el proyecto, comprobamos que el JDK era el correcto. Para ello seleccionamos \textit{Windows}, \textit{Preferences}, \textit{Java}, \textit{Installed JREs} y en nuestro caso es correcto (Figura \ref{fig:ConfEcl02}).
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl02.png}}
+	\caption{Comprobación JDK}
+	\label{fig:ConfEcl02}
+	
+\end{figure}
+
+Posteriormente eliminamos y reconfiguramos el servidor web (Tomcat). Para ello eliminaremos el proyecto denominado \textit{Servers} (clic derecho sobre el proyecto) y el servidor denominado \textit{Tomcat} (apreciable a la derecha de la figura \ref{fig:ConfEcl02}). Posteriormente accederemos a \textit{Windows}, \textit{Preferences}, \textit{Servers}, \textit{Runtime enviroments} y eliminaremos el existente. Posteriormente lo añadiremos nuevamente (\textit{Add}) (Figura \ref{fig:ConfEcl03}).
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl03.png}}
+	\caption{Añadiendo Runtime Enviroments}
+	\label{fig:ConfEcl03}
+	
+\end{figure}
+
+Añadimos \textit{Tomcat} como servidor como podemos observar en la figura \ref{fig:ConfEcl04}.
+
+\begin{figure}[H]
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl04.png}}
+	\caption{Añadiendo Servidor}
+	\label{fig:ConfEcl04}
+	
+\end{figure}
+Lo configuramos haciendo doble click sobre el servidor de Tomcat. Para ello cambiaremos el puerto HTTP y los Timeouts a los mostrados en la figura \ref{fig:ConfEcl05}.
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl05.png}}
+	\caption{Configuración Servidor Tomcat}
+	\label{fig:ConfEcl05}
+	
+\end{figure}
+Para comprobar que \textit{Tomcat} está funcionando, pulsamos sobre el botón \textit{run} situado en la sección \textit{Servers}. Nos saltó una pestaña del firewall la cual aceptamos (Figura \ref{fig:ConfEcl06}).
+
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl06.png}}
+	\caption{Aviso de Securidad al lanzar Tomcat}
+	\label{fig:ConfEcl06}
+	
+\end{figure}
+
+Ahora procedemos a lanzar Chrome y probarlo obteniendo el resultado reflejado en la figura \ref{fig:ConfEcl07}.
+\begin{figure}[H]
+	
+	\centering
+	\makebox[\textwidth]{\includegraphics[width=0.95\textwidth]{images/ConfEcl07.png}}
+	\caption{Comprobación funcionamiento Tomcat}
+	\label{fig:ConfEcl07}
+	
+\end{figure}
+
+Y con todo esto ya hemos configurado nuestro entorno de trabajo y comprobado minimamente que funciona de la manera esperada.
+	
+\end{document}
